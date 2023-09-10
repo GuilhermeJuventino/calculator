@@ -25,34 +25,34 @@
 
     <div class="calcBody">
         <div class="calcRow">
-            <button type="button">&larr;</button>
+            <button type="button" onclick="clearCalc()">&larr;</button>
         </div>
 
         <div class="calcRow">
-            <button type="button">7</button>
-            <button type="button">8</button>
-            <button type="button">9</button>
-            <button type="button" onclick="calcWrite('+')">&plus;</button>
+            <button type="button" onclick="calcWrite('7')">7</button>
+            <button type="button" onclick="calcWrite('8')">8</button>
+            <button type="button" onclick="calcWrite('9')">9</button>
+            <button type="button" onclick="setOperand('+')">&plus;</button>
         </div>
 
         <div class="calcRow">
-            <button type="button">4</button>
-            <button type="button">5</button>
-            <button type="button">6</button>
-            <button type="button" onclick="calcWrite('-')">&minus;</button>
+            <button type="button" onclick="calcWrite('4')">4</button>
+            <button type="button" onclick="calcWrite('5')">5</button>
+            <button type="button" onclick="calcWrite('6')">6</button>
+            <button type="button" onclick="setOperand('-')">&minus;</button>
         </div>
 
         <div class="calcRow">
-            <button type="button">1</button>
-            <button type="button">2</button>
-            <button type="button">3</button>
-            <button type="button" onclick="calcWrite('*')">*</button>
+            <button type="button" onclick="calcWrite('1')">1</button>
+            <button type="button" onclick="calcWrite('2')">2</button>
+            <button type="button" onclick="calcWrite('3')">3</button>
+            <button type="button" onclick="setOperand('*')">*</button>
         </div>
 
         <div class="calcRow">
-            <button type="button">,</button>
-            <button type="button">0</button>
-            <button type="button" onclick="calcWrite('/')">/</button>
+            <button type="button" onclick="calcWrite('.')">.</button>
+            <button type="button" onclick="calcWrite('0')">0</button>
+            <button type="button" onclick="setOperand('/')">/</button>
             <button type="button">&equals;</button>
         </div>
     </div>
