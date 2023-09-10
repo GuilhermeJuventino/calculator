@@ -4,13 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Calculator</title>
 </head>
 
 <body>
     <h1>Online Calculator</h1>
 
-    <div class="calcText">
+    <div class="previousNumber" id="previousNumber">
+        0
+    </div>
+
+    <div class="operand" id="operand">
+
+    </div>
+
+    <div class="currentNumber" id="currentNumber">
         0
     </div>
 
@@ -23,27 +32,27 @@
             <button type="button">7</button>
             <button type="button">8</button>
             <button type="button">9</button>
-            <button type="button">&plus;</button>
+            <button type="button" onclick="calcWrite('+')">&plus;</button>
         </div>
 
         <div class="calcRow">
             <button type="button">4</button>
             <button type="button">5</button>
             <button type="button">6</button>
-            <button type="button">&minus;</button>
+            <button type="button" onclick="calcWrite('-')">&minus;</button>
         </div>
 
         <div class="calcRow">
             <button type="button">1</button>
             <button type="button">2</button>
             <button type="button">3</button>
-            <button type="button">&times;</button>
+            <button type="button" onclick="calcWrite('*')">*</button>
         </div>
 
         <div class="calcRow">
             <button type="button">,</button>
             <button type="button">0</button>
-            <button type="button">&div;</button>
+            <button type="button" onclick="calcWrite('/')">/</button>
             <button type="button">&equals;</button>
         </div>
     </div>
