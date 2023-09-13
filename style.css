@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calculator {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+.calculator > .calcText {
+    max-width: 30%;
+    min-width: 19%;
+    border-style: solid;
+    border-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.calcText > .previousAndOperand {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.calculator > .calcBody {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.calcBody > .calcRow {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}

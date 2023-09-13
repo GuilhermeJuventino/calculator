@@ -11,49 +11,55 @@
 <body>
     <h1>Online Calculator</h1>
 
-    <div class="previousNumber" id="previousNumber">
-        0
-    </div>
+    <div class="calculator">
+        <div class="calcText">
+            <div class="previousAndOperand">
+                <div class="previousNumber" id="previousNumber">
+                    0
+                </div>
 
-    <div class="operand" id="operand">
+                <div class="operand" id="operand">
+            </div>
 
-    </div>
+            </div>
 
-    <div class="currentNumber" id="currentNumber">
-        0
-    </div>
-
-    <div class="calcBody">
-        <div class="calcRow">
-            <button type="button" onclick="clearCalc()">&larr;</button>
+            <div class="currentNumber" id="currentNumber">
+                0
+            </div>
         </div>
 
-        <div class="calcRow">
-            <button type="button" onclick="calcWrite('7')">7</button>
-            <button type="button" onclick="calcWrite('8')">8</button>
-            <button type="button" onclick="calcWrite('9')">9</button>
-            <button type="button" onclick="setOperand('+')">&plus;</button>
-        </div>
+        <div class="calcBody">
+            <div class="calcRow">
+                <button type="button" onclick="clearCalc()">&larr;</button>
+            </div>
 
-        <div class="calcRow">
-            <button type="button" onclick="calcWrite('4')">4</button>
-            <button type="button" onclick="calcWrite('5')">5</button>
-            <button type="button" onclick="calcWrite('6')">6</button>
-            <button type="button" onclick="setOperand('-')">&minus;</button>
-        </div>
+            <div class="calcRow">
+                <button type="button" onclick="calcWrite('7')">7</button>
+                <button type="button" onclick="calcWrite('8')">8</button>
+                <button type="button" onclick="calcWrite('9')">9</button>
+                <button type="button" onclick="setOperand('+')">&plus;</button>
+            </div>
 
-        <div class="calcRow">
-            <button type="button" onclick="calcWrite('1')">1</button>
-            <button type="button" onclick="calcWrite('2')">2</button>
-            <button type="button" onclick="calcWrite('3')">3</button>
-            <button type="button" onclick="setOperand('*')">*</button>
-        </div>
+            <div class="calcRow">
+                <button type="button" onclick="calcWrite('4')">4</button>
+                <button type="button" onclick="calcWrite('5')">5</button>
+                <button type="button" onclick="calcWrite('6')">6</button>
+                <button type="button" onclick="setOperand('-')">&minus;</button>
+            </div>
 
-        <div class="calcRow">
-            <button type="button" onclick="calcWrite('.')">.</button>
-            <button type="button" onclick="calcWrite('0')">0</button>
-            <button type="button" onclick="setOperand('/')">/</button>
-            <button type="button" onclick="calculateResult()">&equals;</button>
+            <div class="calcRow">
+                <button type="button" onclick="calcWrite('1')">1</button>
+                <button type="button" onclick="calcWrite('2')">2</button>
+                <button type="button" onclick="calcWrite('3')">3</button>
+                <button type="button" onclick="setOperand('*')">*</button>
+            </div>
+
+            <div class="calcRow">
+                <button type="button" onclick="calcWrite('.')">.</button>
+                <button type="button" onclick="calcWrite('0')">0</button>
+                <button type="button" onclick="setOperand('/')">/</button>
+                <button type="button" onclick="calculateResult()">&equals;</button>
+            </div>
         </div>
     </div>
 </body>
